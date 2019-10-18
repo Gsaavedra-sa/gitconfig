@@ -1,0 +1,27 @@
+criar chave ssh:
+ssh-keygen -t rsa -b 4096 -C "seuemail@dominio.com.br"
+Generating public/private rsa key pair.  
+Enter file in which to save the key (/home/suaconta/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):   
+Enter same passphrase again:
+
+Agora, iremos adicionar a chave que criamos ao ssh-agent. Digite os comandos:
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa
+
+Vamos precisar copiar a chave que geramos para associá-la à nossa conta do Github. Abra o arquivo id_rsa no GEdit e copie seu conteúdo:
+cat ~/.ssh/id_rsa.pub
+
+Abra o Github no navegador, faça o login e no menu selecione a opção “Settings”
+
+No menu a esquerda selecione a opção …
+
+Clique no botão “New SSH Key”
+
+Dê um nome para a chave (pode ser qualquer nome que você quiser como: Computador do Escritório) no campo Title; Cola a chave no campo Key e confirme pressionando o botão Add SSH key
+
+Pronto sua conexão do seu Git com sua conta do Github está configurada. Agora vamos testar se funcionou?
+
+ssh -T git@github.com  
+
+
