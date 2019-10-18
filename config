@@ -9,7 +9,7 @@ Agora, iremos adicionar a chave que criamos ao ssh-agent. Digite os comandos:
 ssh-agent -s
 ssh-add ~/.ssh/id_rsa
 
-Vamos precisar copiar a chave que geramos para associá-la à nossa conta do Github. Abra o arquivo id_rsa no GEdit e copie seu conteúdo:
+Vamos precisar copiar a chave que geramos para associá-la à nossa conta do Github. Veja o arquivo id_rsa e copie seu conteúdo:
 cat ~/.ssh/id_rsa.pub
 
 Abra o Github no navegador, faça o login e no menu selecione a opção “Settings”
