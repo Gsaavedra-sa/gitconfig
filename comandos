@@ -1,0 +1,33 @@
+git help - utilizado para ver funcionalidades de ajuda
+
+git init - inicia o projeto na pasta atual que voce esta
+
+git config --global user.name "Gsaavedra-sa"
+git config --global user.email "gabrielsaito19@gmail.com" - configurando seu repositorio remoto com o git
+
+git status - Para ver alteraçoes que foram feitas e commits realizados
+
+git log - mostra o log do foi realizado
+
+git remote add origin git@github.com:Gsaavedra-sa/git.git - configurando seu diretorio remoto onde voce ira fazer as pulicaçoes no github
+
+git remote -v
+
+git push -u origin master - utilizado a primeira que que faz um push
+
+git push - envia todas as alterações locais para o github
+
+________________________________________________
+#comandos extras
+
+git config --global push.default simple - configura o push default
+
+git commit -m "adicionando o readme" - faz commit sem abrir o editor de texto
+
+git config --global core.editor vim - configura o editor de sua preferencia que voce quer utilizar
+
+git diff HEAD~1 - monstra ultimas alterações (commit)
+
+git checkout "" - volta nas ultimas alterações que foram realizadas
+
+git checkout master - volta as alterações para o estado atual
